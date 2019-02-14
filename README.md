@@ -6,8 +6,18 @@ Every Friday (or whenever Nick hasn't bothered to bring his lunch, which is prob
 
 This integration attempts to help us decide on a place, so we're free to spend our time doing more useful things, like arguing over who is going to collect
 
+## How do I install it?
+1. Edit the file as necessary, adding your locations to the `lunch` variable
+2. Go to your administration page (Options > Administration)
+3. Make a new outgoing webhook
+   * The event trigger should be set to "Message Sent"
+   * The channel should be the channel you want to run this integration in (e.g. \#lunch)
+   * Set the URL to anything (it doesn't matter what, so http://example.com is fine)
+   * Ensure "enabled" is set to true where necessary
+   * Paste the script in and save the webhook
+
 ## How do I use it?
-Open the .js file and replace the values inside with your own. Add a new integration in Rocket.Chat and assign it to a room. Then when you can't decide what to have for lunch, you send a food emoji and it'll "spin the wheel" and return a restaurant, along with their menu so you can just click on it and go.
+When you can't decide what to have for lunch, simply send a food emoji and it'll return a restaurant, along with their menu so you can just click on it and go.
 
 You could use the attachments field to include a PDF menu, or whatever you want to do with it.
 
